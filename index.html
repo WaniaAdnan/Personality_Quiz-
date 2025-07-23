@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Which Planet Are You?</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="background" id="background"></div>
+
+  <div class="container" id="app">
+    <div id="welcome">
+      <h1 class="glow">✨ Which Planet Are You? ✨</h1>
+      <p>Embark on a magical journey through the cosmos and discover which celestial body mirrors your soul.</p>
+      <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <div id="quiz" style="display:none;">
+      <h2 class="glow">Question <span id="qNum"></span> of <span id="totalQ"></span></h2>
+      <div class="question" id="questionText"></div>
+      <div id="answers"></div>
+    </div>
+
+    <div id="result" style="display:none;">
+      <h1 id="resultPlanet" class="glow"></h1>
+      <p id="funFact"></p>
+      <img id="planetImg" src="" alt="Planet Image"/>
+      <button onclick="location.reload()">Try Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
